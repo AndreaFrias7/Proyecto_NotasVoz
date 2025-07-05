@@ -1,4 +1,10 @@
 package com.example.appandroid
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+
+import androidx.compose.foundation.background
+
+import androidx.compose.ui.unit.dp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,7 +13,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -33,8 +38,12 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "hello $name!",
+        text = "Hello $name!",
+        color = MaterialTheme.colorScheme.onBackground,
+        style = MaterialTheme.typography.headlineLarge,
         modifier = modifier
+            .background(MaterialTheme.colorScheme.background)
+            .padding(16.dp)
     )
 }
 
