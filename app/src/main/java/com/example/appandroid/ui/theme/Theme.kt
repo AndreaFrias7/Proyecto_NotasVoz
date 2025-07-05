@@ -1,4 +1,5 @@
 package com.example.appandroid.ui.theme
+import androidx.compose.ui.graphics.Color
 
 import android.app.Activity
 import android.os.Build
@@ -12,26 +13,26 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = Red80,
+    secondary = Blue80,
+    background = Black80,
+    surface = PurpleBlue80,
+    onPrimary = Color.White,
+    onBackground = Color.White,
+    onSurface = Color.White
 )
+
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primary = Red80,            // Botón de grabar, acentos
+    secondary = PurpleBlue80,   // Decorativos o elementos secundarios
+    background = Blue80,        // Fondo general
+    surface = Color.White,      // Tarjetas o superficies
+    onPrimary = Color.White,    // Texto sobre botones rojos
+    onBackground = Black80,     // Texto principal
+    onSurface = Black80         // Texto sobre superficies blancas
 )
+
 
 @Composable
 fun AppAndroidTheme(
