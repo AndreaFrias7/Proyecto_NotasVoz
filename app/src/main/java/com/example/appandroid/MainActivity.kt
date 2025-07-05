@@ -46,7 +46,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             .padding(16.dp)
     )
 }
-
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
