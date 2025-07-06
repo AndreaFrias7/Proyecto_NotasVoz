@@ -13,10 +13,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Red80,
+    primary =Navy,
     secondary = Blue80,
     background = Black80,
-    surface = PurpleBlue80,
+    surface = White80,
     onPrimary = Color.White,
     onBackground = Color.White,
     onSurface = Color.White
@@ -24,8 +24,9 @@ private val DarkColorScheme = darkColorScheme(
 
 
 private val LightColorScheme = lightColorScheme(
-    primary = Red80,            // Botón de grabar, acentos
-    secondary = PurpleBlue80,   // Decorativos o elementos secundarios
+
+    primary = Navy,            // Botón de grabar, acentos
+    secondary = White80,   // Decorativos o elementos secundarios
     background = Blue80,        // Fondo general
     surface = Color.White,      // Tarjetas o superficies
     onPrimary = Color.White,    // Texto sobre botones rojos
