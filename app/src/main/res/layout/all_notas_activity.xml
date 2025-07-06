@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <!-- título de la vista -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notas"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- notas:
+     los puse como views pq no sabía si los quería hacer botones,
+     el del background (turquesa) es solo para crear el margen entre
+     el espacio de notas y la pantalla. falta agregar bordes a las
+     notas y redondear las esquinas, ver como hacer para que se agre-
+     guen automáticamente notas a la vista y se acomoden solas -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="305dp"
+        android:layout_height="587dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewNota1"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <View
+        android:id="@+id/viewNota2"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+    />
+
+    <!-- botón para crear nueva nota (igual debe ser posible usarlo
+    sin el botón- con gestos del giroscopio) -->
+    <Button
+        android:id="@+id/addNota"
+        android:layout_width="77dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="+"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

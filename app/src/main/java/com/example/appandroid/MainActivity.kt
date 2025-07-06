@@ -61,7 +61,7 @@ fun WelcomeScreen(onStartClick: () -> Unit) {
                 text = "¡Bienvenido a Notes!",
                 fontSize = 35.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Black
+                color = Color.Black,
             )
 
             Spacer(modifier = Modifier.height(24.dp))
